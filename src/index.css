@@ -1,92 +1,113 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Underdog&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Underdog&display=swap");
 
-
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    background: rgb(4 6 31 / var(--tw-bg-opacity, 1));
-    font-family: "Inter", sans-serif;
-    @apply text-neutral-200
-}
-
-.bg-primary{
-    @apply bg-[#32F5A9]
-}
-.bg-secondary{
-    @apply bg-[#081F2D]
-}
-.text-primary{
-    @apply text-[#32F5A9]
-}
-.text-secondary{
-    @apply text-neutral-200
+body {
+  background: rgb(4 6 31 / var(--tw-bg-opacity, 1));
+  font-family: "Inter", sans-serif;
+  @apply text-neutral-200;
 }
 
-.navlinks > a{
-    @apply text-neutral-400 font-bold hover:text-[#32F5A9]
+.bg-primary {
+  @apply bg-[#32F5A9];
+}
+.bg-secondary {
+  @apply bg-[#081F2D];
+}
+.text-primary {
+  @apply text-[#32F5A9];
+}
+.text-secondary {
+  @apply text-neutral-200;
 }
 
-.navlinks> .active{
-    color: #32F5A9;
+.navlinks > a {
+  @apply text-neutral-400 font-bold hover:text-[#32F5A9];
 }
 
-.btn{
-    @apply py-3 px-10 text-xl font-bold rounded-lg border-2 border-[#32F5A9] cursor-pointer
+.navlinks > .active {
+  color: #32f5a9;
 }
 
-.card{
-    background-image: linear-gradient(rgb(0, 25, 41) 0%, rgba(0, 25, 41, 0.22) 100%);
-    border: 2px solid rgb(50, 245, 169);
-    border-radius: 16px;
-    padding: 20px 24px;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
+.btn {
+  @apply py-1.5 px-5 text-base sm:py-3 sm:px-10 sm:text-xl font-bold rounded-lg border-2 border-[#32F5A9] cursor-pointer;
 }
 
-@layer base{
-    h1{
-        font-size: 72px;
-        font-weight: bold;
-    }
-    h2{
-        font-size: 54px;
-        font-weight: bold;
-    }
-    h3{
-        font-size: 32px;
-        font-weight: bold;
-    }
-    h4{
-        font-size: 25px;
-        font-weight: bold;
-    }
-    p{
-        font-size: 18px;
-    }
+.card {
+  background-image: linear-gradient(
+    rgb(0, 25, 41) 0%,
+    rgba(0, 25, 41, 0.22) 100%
+  );
+  border: 2px solid rgb(50, 245, 169);
+  border-radius: 16px;
+  padding: 20px 24px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
 }
 
-.home-title, #contact{
-    background-image: url('/src/assets/download.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+/* @layer base {
+  h1 {
+    font-size: 72px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 54px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 18px;
+  }
+} */
+
+@layer base {
+  h1 {
+    @apply sm:text-7xl text-4xl font-bold;
+  }
+  h2 {
+    @apply sm:text-[54px] text-[40px] font-bold;
+  }
+  h3 {
+    @apply sm:text-[32px] text-[26px] font-bold;
+  }
+  h4 {
+    @apply sm:text-[25px] text-lg font-bold;
+  }
+  p {
+    @apply sm:text-lg text-sm;
+  }
+}
+
+.home-title,
+#contact {
+  background-image: url("/src/assets/download.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #32F5A9;
-    border-radius: 10px;
-  }
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #32f5a9;
+  border-radius: 10px;
+}
